@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ebook Voice Player - Listen to your audiobooks">
+    <title>Now Playing - Ebook Voice</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <a href="dashboard.html" class="back-button" title="Back to Dashboard">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <div class="logo">
+                        <i class="fas fa-book-reader"></i>
+                        <span>Ebook<span class="highlight">Voice</span></span>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="index.html">Home</a>
+                    <a href="create.html">Create</a>
+                    <a href="settings.html">Settings</a>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="user-profile">
+                        <img src="https://ui-avatars.com/api/?name=John+Doe&background=6366f1&color=fff" alt="User Profile">
+                        <span class="user-name">John D.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Player Main Content -->
+    <main class="player-main">
+        <div class="container-fluid">
+            <div class="player-layout">
+                <!-- Chapter Sidebar -->
+                <aside class="chapters-sidebar">
+                    <div class="chapters-header">
+                        <h3><i class="fas fa-list"></i> Chapters</h3>
+                        <span class="chapters-count">6 chapters</span>
+                    </div>
+
+                    <div class="chapters-list">
+                        <!-- Chapter 1 -->
+                        <div class="chapter-item active" data-chapter="1">
+                            <div class="chapter-thumbnail">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="chapter-details">
+                                <span class="chapter-number">Chapter 1</span>
+                                <h4 class="chapter-title">The Beginning</h4>
+                                <span class="chapter-duration">12:34</span>
+                            </div>
+                            <div class="chapter-playing">
+                                <i class="fas fa-volume-up"></i>
+                            </div>
+                        </div>
+
+                        <!-- Chapter 2 -->
+                        <div class="chapter-item" data-chapter="2">
+                            <div class="chapter-thumbnail">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="chapter-details">
+                                <span class="chapter-number">Chapter 2</span>
+                                <h4 class="chapter-title">The Journey Starts</h4>
+                                <span class="chapter-duration">15:42</span>
+                            </div>
+                        </div>
+
+                        <!-- Chapter 3 -->
+                        <div class="chapter-item" data-chapter="3">
+                            <div class="chapter-thumbnail">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="chapter-details">
+                                <span class="chapter-number">Chapter 3</span>
+                                <h4 class="chapter-title">Discoveries</h4>
+                                <span class="chapter-duration">18:20</span>
+                            </div>
+                        </div>
+
+                        <!-- Chapter 4 -->
+                        <div class="chapter-item" data-chapter="4">
+                            <div class="chapter-thumbnail">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="chapter-details">
+                                <span class="chapter-number">Chapter 4</span>
+                                <h4 class="chapter-title">The Turning Point</h4>
+                                <span class="chapter-duration">14:55</span>
+                            </div>
+                        </div>
+
+                        <!-- Chapter 5 -->
+                        <div class="chapter-item" data-chapter="5">
+                            <div class="chapter-thumbnail">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="chapter-details">
+                                <span class="chapter-number">Chapter 5</span>
+                                <h4 class="chapter-title">Resolution</h4>
+                                <span class="chapter-duration">16:10</span>
+                            </div>
+                        </div>
+
+                        <!-- Chapter 6 -->
+                        <div class="chapter-item" data-chapter="6">
+                            <div class="chapter-thumbnail">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="chapter-details">
+                                <span class="chapter-number">Chapter 6</span>
+                                <h4 class="chapter-title">The End</h4>
+                                <span class="chapter-duration">13:28</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Player Section -->
+                <div class="player-content">
+                    <!-- Book Header -->
+                    <div class="book-header">
+                        <div class="book-cover-large">
+                            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=600&fit=crop" alt="Book Cover">
+                        </div>
+                        <div class="book-info-header">
+                            <h1 class="book-title">The Art of Storytelling</h1>
+                            <p class="book-author">By Sarah Johnson</p>
+                            <div class="book-meta-header">
+                                <span class="book-duration">
+                                    <i class="fas fa-clock"></i>
+                                    Total: 1h 31m
+                                </span>
+                                <span class="tier-badge pro">
+                                    <i class="fas fa-crown"></i>
+                                    Pro
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Audio Player -->
+                    <div class="audio-player">
+                        <audio id="audioElement" preload="metadata">
+                            <!-- Placeholder for audio source -->
+                            <source src="" type="audio/mpeg">
+                        </audio>
+
+                        <!-- Progress Bar -->
+                        <div class="player-progress">
+                            <div class="progress-bar-player" id="progressBar">
+                                <div class="progress-fill-player" id="progressFill"></div>
+                                <div class="progress-handle" id="progressHandle"></div>
+                            </div>
+                            <div class="time-display">
+                                <span id="currentTime">0:00</span>
+                                <span id="totalTime">12:34</span>
+                            </div>
+                        </div>
+
+                        <!-- Main Controls -->
+                        <div class="player-controls">
+                            <button class="control-btn secondary" id="rewindBtn" title="Rewind 15s">
+                                <i class="fas fa-rotate-left"></i>
+                                <span class="btn-label">15</span>
+                            </button>
+
+                            <button class="control-btn secondary" id="prevChapterBtn" title="Previous Chapter">
+                                <i class="fas fa-backward-step"></i>
+                            </button>
+
+                            <button class="control-btn primary large" id="playPauseBtn" title="Play">
+                                <i class="fas fa-play"></i>
+                            </button>
+
+                            <button class="control-btn secondary" id="nextChapterBtn" title="Next Chapter">
+                                <i class="fas fa-forward-step"></i>
+                            </button>
+
+                            <button class="control-btn secondary" id="forwardBtn" title="Forward 15s">
+                                <i class="fas fa-rotate-right"></i>
+                                <span class="btn-label">15</span>
+                            </button>
+                        </div>
+
+                        <!-- Additional Controls -->
+                        <div class="player-settings">
+                            <!-- Volume Control -->
+                            <div class="volume-control">
+                                <button class="settings-btn" id="volumeBtn">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                                <div class="volume-slider-container">
+                                    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="100">
+                                </div>
+                            </div>
+
+                            <!-- Playback Speed -->
+                            <div class="speed-control">
+                                <button class="settings-btn" id="speedBtn">
+                                    <span class="speed-value">1x</span>
+                                </button>
+                                <div class="speed-menu" id="speedMenu">
+                                    <button class="speed-option" data-speed="0.5">0.5x</button>
+                                    <button class="speed-option" data-speed="0.75">0.75x</button>
+                                    <button class="speed-option active" data-speed="1">1x</button>
+                                    <button class="speed-option" data-speed="1.25">1.25x</button>
+                                    <button class="speed-option" data-speed="1.5">1.5x</button>
+                                    <button class="speed-option" data-speed="2">2x</button>
+                                </div>
+                            </div>
+
+                            <!-- Bookmark -->
+                            <button class="settings-btn" id="bookmarkBtn" title="Bookmark this position">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+
+                            <!-- Share -->
+                            <button class="settings-btn" id="shareBtn" title="Share this audiobook">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Read-Along Text Section -->
+                    <div class="read-along-section">
+                        <div class="read-along-header">
+                            <h3><i class="fas fa-align-left"></i> Read Along</h3>
+                            <button class="toggle-text-btn" id="toggleTextBtn">
+                                <i class="fas fa-chevron-up"></i>
+                            </button>
+                        </div>
+
+                        <div class="read-along-content" id="readAlongContent">
+                            <p class="text-paragraph">
+                                <span class="text-sentence active">In the beginning, there was a story waiting to be told.</span>
+                                <span class="text-sentence">Every great tale starts with a single word, a single moment of inspiration.</span>
+                                <span class="text-sentence">The art of storytelling is not just about words on a page, but about the emotions they evoke and the journeys they create.</span>
+                            </p>
+
+                            <p class="text-paragraph">
+                                <span class="text-sentence">Throughout history, stories have been the fabric of human connection.</span>
+                                <span class="text-sentence">They teach us, inspire us, and help us understand the world around us.</span>
+                                <span class="text-sentence">From ancient myths to modern novels, the power of narrative remains unchanged.</span>
+                            </p>
+
+                            <p class="text-paragraph">
+                                <span class="text-sentence">As you embark on this journey through the art of storytelling, remember that every story is a gift.</span>
+                                <span class="text-sentence">Whether you're writing your first chapter or your hundredth, the magic lies in the telling.</span>
+                                <span class="text-sentence">Let your imagination soar and your words flow freely.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mobile Chapter Toggle Button -->
+    <button class="mobile-chapter-toggle" id="mobileChapterToggle">
+        <i class="fas fa-list"></i>
+        <span>Chapters</span>
+    </button>
+
+    <!-- Keyboard Shortcuts Info (Hidden by default) -->
+    <div class="shortcuts-overlay" id="shortcutsOverlay" style="display: none;">
+        <div class="shortcuts-panel">
+            <div class="shortcuts-header">
+                <h3>Keyboard Shortcuts</h3>
+                <button class="close-shortcuts" id="closeShortcuts">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="shortcuts-list">
+                <div class="shortcut-item">
+                    <kbd>Space</kbd>
+                    <span>Play / Pause</span>
+                </div>
+                <div class="shortcut-item">
+                    <kbd>←</kbd>
+                    <span>Rewind 15 seconds</span>
+                </div>
+                <div class="shortcut-item">
+                    <kbd>→</kbd>
+                    <span>Forward 15 seconds</span>
+                </div>
+                <div class="shortcut-item">
+                    <kbd>↑</kbd>
+                    <span>Volume Up</span>
+                </div>
+                <div class="shortcut-item">
+                    <kbd>↓</kbd>
+                    <span>Volume Down</span>
+                </div>
+                <div class="shortcut-item">
+                    <kbd>N</kbd>
+                    <span>Next Chapter</span>
+                </div>
+                <div class="shortcut-item">
+                    <kbd>P</kbd>
+                    <span>Previous Chapter</span>
+                </div>
+                <div class="shortcut-item">
+                    <kbd>?</kbd>
+                    <span>Show Shortcuts</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

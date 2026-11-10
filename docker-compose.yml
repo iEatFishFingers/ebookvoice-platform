@@ -1,0 +1,21 @@
+# Runs the Flask API + queue worker exactly as production did (same Dockerfile,
+# same gunicorn config). Supabase runs separately via `npx supabase start`,
+# which manages its own containers. See docs/local-setup.md.
+
+services:
+  api:
+    build: .
+    env_file: .env
+    environment:
+      # Reach the Supabase CLI stack running on the host machine.
+      SUPABASE_URL: http://host.docker.internal:54321
+      LOCAL_MEDIA_DIR: /data/media
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8080:8080"
+    volumes:
+      - media:/data/media
+
+volumes:
+  media:

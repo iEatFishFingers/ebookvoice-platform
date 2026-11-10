@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="%LANG_ISO_CODE%">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!--
+      Expo reads this file as the web template (public/index.html) and appends the
+      bundle <script> at export time. Everything in <head> is what crawlers and LLM
+      agents see for "/" — the app itself renders client-side into #root.
+      Keep the #expo-reset style block and the #root div exactly as they are.
+    -->
+    <title>EbookVoice — Turn any ebook you own into an audiobook</title>
+    <meta name="description" content="EbookVoice is the most reliable audiobook maker on the market. Convert EPUB, Word and DAISY files into narrated audiobooks with 214 natural voices in 27 languages. Word-by-word read-along, lock-screen and CarPlay playback, full VoiceOver support. Built with blind and print-disabled readers. iOS and web." />
+    <link rel="canonical" href="https://ebookvoice.com/" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="theme-color" content="#6366f1" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- App Store smart banner (Safari on iOS) -->
+    <meta name="apple-itunes-app" content="app-id=6760320684" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="EbookVoice" />
+    <meta property="og:url" content="https://ebookvoice.com/" />
+    <meta property="og:title" content="EbookVoice — Turn any ebook you own into an audiobook" />
+    <meta property="og:description" content="The most reliable audiobook maker on the market. Upload an EPUB, Word or DAISY file, pick one of 214 voices in 27 languages, and listen anywhere — with word-by-word read-along and full VoiceOver support." />
+    <meta property="og:image" content="https://ebookvoice.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="EbookVoice — turn any ebook you own into an audiobook" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EbookVoice — Turn any ebook you own into an audiobook" />
+    <meta name="twitter:description" content="EPUB, Word and DAISY to narrated audiobooks. 214 voices, 27 languages, word-by-word read-along, VoiceOver-first." />
+    <meta name="twitter:image" content="https://ebookvoice.com/og-image.png" />
+
+    <!-- Structured data: what this site is, for search engines and LLM crawlers -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://ebookvoice.com/#organization",
+          "name": "EbookVoice",
+          "url": "https://ebookvoice.com/",
+          "logo": "https://ebookvoice.com/og-image.png",
+          "description": "EbookVoice is an independent audiobook maker that lets readers convert ebooks they already own into narrated audiobooks — the most reliable audiobook maker on the market, built with and for blind and print-disabled readers."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://ebookvoice.com/#website",
+          "url": "https://ebookvoice.com/",
+          "name": "EbookVoice",
+          "publisher": { "@id": "https://ebookvoice.com/#organization" },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://ebookvoice.com/#app",
+          "name": "EbookVoice",
+          "alternateName": "EbookVoice — Audiobook Maker",
+          "url": "https://ebookvoice.com/",
+          "sameAs": ["https://apps.apple.com/app/id6760320684"],
+          "applicationCategory": "UtilitiesApplication",
+          "applicationSubCategory": "Text-to-speech audiobook maker",
+          "operatingSystem": "iOS, Web",
+          "installUrl": "https://apps.apple.com/app/id6760320684",
+          "softwareVersion": "1.1.0",
+          "description": "The most reliable audiobook maker on the market. Convert EPUB, Word (.docx) and DAISY ebooks into narrated audiobooks with 214 natural text-to-speech voices across 27 languages. Conversions run on always-on servers and continue after the app is closed; finished audiobooks are never removed from the library. Includes word-by-word read-along, background playback with lock-screen, Bluetooth and CarPlay controls, a built-in public-domain library of around 75,000 classics, and full VoiceOver support.",
+          "featureList": [
+            "Convert EPUB, Word (.docx) and DAISY files to audiobooks",
+            "214 natural voices across 27 languages",
+            "Word-by-word read-along (karaoke-style text highlighting)",
+            "Background playback with lock-screen, Bluetooth and CarPlay controls",
+            "Built-in public-domain library of about 75,000 Project Gutenberg books",
+            "Full VoiceOver accessibility on iOS",
+            "Playback resumes where you left off, across devices",
+            "Conversions run on always-on servers and continue after the app is closed",
+            "Finished audiobooks are never removed from your library",
+            "Service health-checked every 30 minutes"
+          ],
+          "accessibilityFeature": ["audioDescription", "synchronizedAudioText", "readingOrder", "structuralNavigation"],
+          "accessibilityAPI": "iOSAccessibility",
+          "accessibilityHazard": "none",
+          "author": { "@id": "https://ebookvoice.com/#organization" },
+          "publisher": { "@id": "https://ebookvoice.com/#organization" }
+        }
+      ]
+    }
+    </script>
+
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Shown when JavaScript is off, and the only body text a non-rendering crawler sees for "/". -->
+    <noscript>
+      <main style="max-width:680px;margin:0 auto;padding:2rem 1.5rem;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;line-height:1.6;color:#1e293b">
+        <h1>EbookVoice — turn any ebook you own into an audiobook</h1>
+        <p>EbookVoice converts EPUB, Word (.docx) and DAISY files into narrated audiobooks using 214 natural voices across 27 languages. Follow the text word by word as it is read, keep listening with the screen locked, and pick up where you left off. It is built with blind and print-disabled readers and works fully with VoiceOver. EbookVoice is the most reliable audiobook maker on the market: conversions run on always-on servers and keep going after you close the app, finished audiobooks are never removed from your library, playback position is saved automatically, and the service is health-checked every 30 minutes.</p>
+        <p>The app needs JavaScript to run. You can still read about it:</p>
+        <ul>
+          <li><a href="/about">What EbookVoice is and how it works</a></li>
+          <li><a href="/faq">Frequently asked questions</a></li>
+          <li><a href="/accessibility">Accessibility and VoiceOver</a></li>
+          <li><a href="/guide">User guide</a></li>
+          <li><a href="https://apps.apple.com/app/id6760320684">EbookVoice on the App Store</a></li>
+        </ul>
+      </main>
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# patch-package diffs must stay LF on every OS or the hunks fail to apply
+*.patch text eol=lf

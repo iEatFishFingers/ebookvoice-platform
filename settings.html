@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Settings - Ebook Voice">
+    <title>Settings - Ebook Voice</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <a href="dashboard.html" class="back-button" title="Back to Dashboard">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <div class="logo">
+                        <i class="fas fa-book-reader"></i>
+                        <span>Ebook<span class="highlight">Voice</span></span>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="index.html">Home</a>
+                    <a href="create.html">Create</a>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="user-profile">
+                        <img src="https://ui-avatars.com/api/?name=John+Doe&background=6366f1&color=fff" alt="User Profile">
+                        <span class="user-name">John D.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Settings Main Content -->
+    <main class="settings-main">
+        <div class="settings-container">
+            <!-- Settings Header with Search -->
+            <div class="settings-header">
+                <h1>Settings</h1>
+                <div class="settings-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="settingsSearch" placeholder="Search settings...">
+                </div>
+            </div>
+
+            <div class="settings-layout">
+                <!-- Settings Sidebar Navigation -->
+                <aside class="settings-sidebar" id="settingsSidebar">
+                    <nav class="settings-nav">
+                        <button class="settings-nav-item active" data-section="profile">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </button>
+                        <button class="settings-nav-item" data-section="account">
+                            <i class="fas fa-user-cog"></i>
+                            <span>Account</span>
+                        </button>
+                        <button class="settings-nav-item" data-section="subscription">
+                            <i class="fas fa-crown"></i>
+                            <span>Subscription & Billing</span>
+                        </button>
+                        <button class="settings-nav-item" data-section="preferences">
+                            <i class="fas fa-sliders-h"></i>
+                            <span>Preferences</span>
+                        </button>
+                        <button class="settings-nav-item" data-section="audio">
+                            <i class="fas fa-volume-up"></i>
+                            <span>Audio Settings</span>
+                        </button>
+                        <button class="settings-nav-item" data-section="privacy">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Privacy & Security</span>
+                        </button>
+                        <button class="settings-nav-item" data-section="support">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Help & Support</span>
+                        </button>
+                    </nav>
+                </aside>
+
+                <!-- Settings Content Area -->
+                <div class="settings-content">
+                    <!-- Profile Section -->
+                    <section id="profile-section" class="settings-section active">
+                        <div class="section-title-bar">
+                            <h2>Profile</h2>
+                            <button class="btn-text" id="resetProfileBtn">Reset to defaults</button>
+                        </div>
+
+                        <div class="settings-card">
+                            <div class="profile-avatar-section">
+                                <div class="avatar-upload">
+                                    <img id="profileAvatar" src="https://ui-avatars.com/api/?name=John+Doe&background=6366f1&color=fff&size=120" alt="Profile Picture">
+                                    <button class="avatar-change-btn" id="changeAvatarBtn">
+                                        <i class="fas fa-camera"></i>
+                                    </button>
+                                    <input type="file" id="avatarInput" accept="image/*" hidden>
+                                </div>
+                                <div class="avatar-info">
+                                    <h3>Profile Picture</h3>
+                                    <p>Click the camera icon to upload a new picture</p>
+                                </div>
+                            </div>
+
+                            <div class="form-group-settings">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" class="input-settings" value="johndoe" placeholder="Enter username">
+                            </div>
+
+                            <div class="form-group-settings">
+                                <label for="displayName">Display Name</label>
+                                <input type="text" id="displayName" class="input-settings" value="John Doe" placeholder="Enter display name">
+                            </div>
+
+                            <div class="form-group-settings">
+                                <label for="profileEmail">Email Address</label>
+                                <input type="email" id="profileEmail" class="input-settings" value="john.doe@example.com" disabled>
+                                <small class="field-hint">Email cannot be changed here. Go to Account settings.</small>
+                            </div>
+
+                            <div class="form-group-settings">
+                                <label for="bio">Bio</label>
+                                <textarea id="bio" class="textarea-settings" rows="4" placeholder="Tell us about yourself..."></textarea>
+                            </div>
+
+                            <div class="form-group-settings">
+                                <label>Member Since</label>
+                                <input type="text" class="input-settings" value="January 15, 2024" disabled>
+                            </div>
+
+                            <div class="settings-actions">
+                                <button class="btn btn-primary" id="saveProfileBtn">
+                                    <i class="fas fa-save"></i>
+                                    Save Changes
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Account Section -->
+                    <section id="account-section" class="settings-section">
+                        <div class="section-title-bar">
+                            <h2>Account</h2>
+                            <button class="btn-text" id="resetAccountBtn">Reset to defaults</button>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Email & Password</h3>
+
+                            <div class="form-group-settings">
+                                <label for="accountEmail">Email Address</label>
+                                <div class="input-with-button">
+                                    <input type="email" id="accountEmail" class="input-settings" value="john.doe@example.com">
+                                    <button class="btn btn-secondary btn-sm">Verify Change</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group-settings">
+                                <label>Password</label>
+                                <button class="btn btn-outline btn-sm" id="changePasswordBtn">
+                                    <i class="fas fa-key"></i>
+                                    Change Password
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Connected Accounts</h3>
+
+                            <div class="connected-account-item">
+                                <div class="account-info">
+                                    <i class="fab fa-google" style="color: #4285f4;"></i>
+                                    <div>
+                                        <strong>Google</strong>
+                                        <p>Connected as john.doe@gmail.com</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline btn-sm">Disconnect</button>
+                            </div>
+
+                            <div class="connected-account-item disabled">
+                                <div class="account-info">
+                                    <i class="fab fa-facebook" style="color: #1877f2;"></i>
+                                    <div>
+                                        <strong>Facebook</strong>
+                                        <p>Not connected</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline btn-sm">Connect</button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Localization</h3>
+
+                            <div class="form-group-settings">
+                                <label for="language">Language</label>
+                                <select id="language" class="select-settings">
+                                    <option value="en" selected>English</option>
+                                    <option value="es">Español</option>
+                                    <option value="fr">Français</option>
+                                    <option value="de">Deutsch</option>
+                                    <option value="it">Italiano</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group-settings">
+                                <label for="timezone">Time Zone</label>
+                                <select id="timezone" class="select-settings">
+                                    <option value="utc" selected>UTC (Coordinated Universal Time)</option>
+                                    <option value="est">EST (Eastern Standard Time)</option>
+                                    <option value="pst">PST (Pacific Standard Time)</option>
+                                    <option value="cet">CET (Central European Time)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="settings-card danger-zone">
+                            <h3 class="card-subtitle">Danger Zone</h3>
+                            <p>Once you delete your account, there is no going back. Please be certain.</p>
+                            <button class="btn btn-danger" id="deleteAccountBtn">
+                                <i class="fas fa-trash"></i>
+                                Delete Account
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Subscription Section -->
+                    <section id="subscription-section" class="settings-section">
+                        <div class="section-title-bar">
+                            <h2>Subscription & Billing</h2>
+                        </div>
+
+                        <div class="settings-card subscription-card">
+                            <div class="subscription-header">
+                                <div>
+                                    <div class="tier-badge-large pro">
+                                        <i class="fas fa-crown"></i>
+                                        Pro Plan
+                                    </div>
+                                    <p class="plan-description">Unlimited words • 2 books per month • Premium voices</p>
+                                </div>
+                                <div class="plan-price-large">
+                                    <span class="price-amount">£19.99</span>
+                                    <span class="price-period">/month</span>
+                                </div>
+                            </div>
+
+                            <div class="usage-stats-grid">
+                                <div class="usage-stat-item">
+                                    <div class="usage-header-stat">
+                                        <span>Books this month</span>
+                                        <strong>1 / 2</strong>
+                                    </div>
+                                    <div class="usage-bar">
+                                        <div class="usage-fill" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="usage-stat-item">
+                                    <div class="usage-header-stat">
+                                        <span>Words converted</span>
+                                        <strong>12,450 / Unlimited</strong>
+                                    </div>
+                                    <div class="usage-bar">
+                                        <div class="usage-fill" style="width: 100%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="plan-actions">
+                                <button class="btn btn-outline">
+                                    <i class="fas fa-arrow-up"></i>
+                                    Upgrade Plan
+                                </button>
+                                <button class="btn btn-outline">
+                                    <i class="fas fa-arrow-down"></i>
+                                    Downgrade Plan
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Billing Information</h3>
+
+                            <div class="billing-info-grid">
+                                <div class="billing-info-item">
+                                    <label>Billing Cycle</label>
+                                    <span>Monthly</span>
+                                </div>
+                                <div class="billing-info-item">
+                                    <label>Next Billing Date</label>
+                                    <span>February 15, 2025</span>
+                                </div>
+                                <div class="billing-info-item">
+                                    <label>Payment Method</label>
+                                    <span>
+                                        <i class="fab fa-cc-visa"></i>
+                                        •••• •••• •••• 4242
+                                    </span>
+                                </div>
+                                <div class="billing-info-item">
+                                    <button class="btn btn-outline btn-sm" id="updatePaymentBtn">
+                                        Update Payment Method
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Invoice History</h3>
+
+                            <div class="table-responsive">
+                                <table class="invoice-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Amount</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Jan 15, 2025</td>
+                                            <td>£19.99</td>
+                                            <td><span class="status-badge paid">Paid</span></td>
+                                            <td><button class="btn-text-sm"><i class="fas fa-download"></i> Download</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dec 15, 2024</td>
+                                            <td>£19.99</td>
+                                            <td><span class="status-badge paid">Paid</span></td>
+                                            <td><button class="btn-text-sm"><i class="fas fa-download"></i> Download</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nov 15, 2024</td>
+                                            <td>£19.99</td>
+                                            <td><span class="status-badge paid">Paid</span></td>
+                                            <td><button class="btn-text-sm"><i class="fas fa-download"></i> Download</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="card-footer-action">
+                                <button class="btn-text danger" id="cancelSubscriptionBtn">
+                                    Cancel Subscription
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Preferences Section -->
+                    <section id="preferences-section" class="settings-section">
+                        <div class="section-title-bar">
+                            <h2>Preferences</h2>
+                            <button class="btn-text" id="resetPreferencesBtn">Reset to defaults</button>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Appearance</h3>
+
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <label>Theme</label>
+                                    <p>Choose your preferred color scheme</p>
+                                </div>
+                                <div class="theme-selector">
+                                    <button class="theme-option active" data-theme="light">
+                                        <i class="fas fa-sun"></i>
+                                        <span>Light</span>
+                                    </button>
+                                    <button class="theme-option" data-theme="dark">
+                                        <i class="fas fa-moon"></i>
+                                        <span>Dark</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Playback Settings</h3>
+
+                            <div class="form-group-settings">
+                                <label for="defaultSpeed">Default Playback Speed</label>
+                                <select id="defaultSpeed" class="select-settings">
+                                    <option value="0.5">0.5x</option>
+                                    <option value="0.75">0.75x</option>
+                                    <option value="1" selected>1x (Normal)</option>
+                                    <option value="1.25">1.25x</option>
+                                    <option value="1.5">1.5x</option>
+                                    <option value="2">2x</option>
+                                </select>
+                            </div>
+
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <label>Auto-play Next Chapter</label>
+                                    <p>Automatically play the next chapter when current finishes</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="autoPlayNextChapter" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Email Notifications</h3>
+
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <label>Conversion Complete</label>
+                                    <p>Get notified when your audiobook conversion is complete</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="notifyConversion" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <label>Marketing Emails</label>
+                                    <p>Receive promotional emails and special offers</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="notifyMarketing">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <label>Product Updates</label>
+                                    <p>Stay informed about new features and improvements</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="notifyUpdates" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">File Settings</h3>
+
+                            <div class="form-group-settings">
+                                <label for="audioFormat">Default Audio Format</label>
+                                <select id="audioFormat" class="select-settings">
+                                    <option value="mp3" selected>MP3</option>
+                                    <option value="wav">WAV</option>
+                                    <option value="m4a">M4A</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group-settings">
+                                <label for="autoSaveInterval">Auto-save Interval (Ebook Editor)</label>
+                                <select id="autoSaveInterval" class="select-settings">
+                                    <option value="30">Every 30 seconds</option>
+                                    <option value="60" selected>Every 1 minute</option>
+                                    <option value="120">Every 2 minutes</option>
+                                    <option value="300">Every 5 minutes</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="settings-actions">
+                            <button class="btn btn-primary" id="savePreferencesBtn">
+                                <i class="fas fa-save"></i>
+                                Save Preferences
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Audio Settings Section -->
+                    <section id="audio-section" class="settings-section">
+                        <div class="section-title-bar">
+                            <h2>Audio Settings</h2>
+                            <button class="btn-text" id="resetAudioBtn">Reset to defaults</button>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Voice & Quality</h3>
+
+                            <div class="form-group-settings">
+                                <label for="defaultVoice">Default Voice</label>
+                                <select id="defaultVoice" class="select-settings">
+                                    <option value="sarah">Sarah (Female, US English)</option>
+                                    <option value="john" selected>John (Male, US English)</option>
+                                    <option value="emma">Emma (Female, British English)</option>
+                                    <option value="james">James (Male, British English)</option>
+                                    <option value="maria">Maria (Female, Spanish)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group-settings">
+                                <label for="audioQuality">Audio Quality</label>
+                                <select id="audioQuality" class="select-settings">
+                                    <option value="low">Low (64 kbps)</option>
+                                    <option value="medium">Medium (128 kbps)</option>
+                                    <option value="high" selected>High (192 kbps)</option>
+                                    <option value="premium">Premium (320 kbps)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Chapter Transitions</h3>
+
+                            <div class="form-group-settings">
+                                <label for="chapterTransition">Transition Style</label>
+                                <select id="chapterTransition" class="select-settings">
+                                    <option value="immediate">Immediate (No gap)</option>
+                                    <option value="gap" selected>1 Second Gap</option>
+                                    <option value="fade">Fade Out/In</option>
+                                </select>
+                            </div>
+
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <label>Read-Along Text Sync</label>
+                                    <p>Highlight text as audio plays</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="readAlongSync" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <label>Download After Conversion</label>
+                                    <p>Automatically download audio files (Pro plan only)</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="autoDownload">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="settings-actions">
+                            <button class="btn btn-primary" id="saveAudioBtn">
+                                <i class="fas fa-save"></i>
+                                Save Audio Settings
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Privacy & Security Section -->
+                    <section id="privacy-section" class="settings-section">
+                        <div class="section-title-bar">
+                            <h2>Privacy & Security</h2>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Two-Factor Authentication</h3>
+
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <label>2FA Status</label>
+                                    <p>Add an extra layer of security to your account</p>
+                                </div>
+                                <button class="btn btn-outline btn-sm" id="setup2FABtn">
+                                    <i class="fas fa-shield-alt"></i>
+                                    Setup 2FA
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Active Sessions</h3>
+
+                            <div class="session-list">
+                                <div class="session-item">
+                                    <div class="session-icon">
+                                        <i class="fas fa-desktop"></i>
+                                    </div>
+                                    <div class="session-info">
+                                        <strong>Windows PC • Chrome</strong>
+                                        <p>New York, US • Last active: Now (Current session)</p>
+                                    </div>
+                                </div>
+
+                                <div class="session-item">
+                                    <div class="session-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="session-info">
+                                        <strong>iPhone • Safari</strong>
+                                        <p>New York, US • Last active: 2 hours ago</p>
+                                    </div>
+                                    <button class="btn btn-outline btn-sm">Revoke</button>
+                                </div>
+                            </div>
+
+                            <div class="card-footer-action">
+                                <button class="btn btn-outline" id="logoutAllBtn">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    Log Out All Other Sessions
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Data & Privacy</h3>
+
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <label>Profile Visibility</label>
+                                    <p>Make your profile visible to other users</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="profileVisibility">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <label>Share Usage Statistics</label>
+                                    <p>Help us improve by sharing anonymous usage data</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="shareStats" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <label>Export Your Data</label>
+                                    <p>Download all your data in JSON format</p>
+                                </div>
+                                <button class="btn btn-outline btn-sm" id="exportDataBtn">
+                                    <i class="fas fa-download"></i>
+                                    Download Data
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Help & Support Section -->
+                    <section id="support-section" class="settings-section">
+                        <div class="section-title-bar">
+                            <h2>Help & Support</h2>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Resources</h3>
+
+                            <div class="support-links">
+                                <a href="#" class="support-link-item">
+                                    <i class="fas fa-book"></i>
+                                    <div>
+                                        <strong>Documentation</strong>
+                                        <p>Learn how to use all features</p>
+                                    </div>
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+
+                                <a href="#" class="support-link-item">
+                                    <i class="fas fa-question-circle"></i>
+                                    <div>
+                                        <strong>FAQ</strong>
+                                        <p>Frequently asked questions</p>
+                                    </div>
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+
+                                <a href="#" class="support-link-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <div>
+                                        <strong>Video Tutorials</strong>
+                                        <p>Step-by-step video guides</p>
+                                    </div>
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">Contact Us</h3>
+
+                            <div class="support-actions">
+                                <button class="btn btn-primary btn-block" id="contactSupportBtn">
+                                    <i class="fas fa-envelope"></i>
+                                    Contact Support
+                                </button>
+
+                                <button class="btn btn-outline btn-block" id="reportBugBtn">
+                                    <i class="fas fa-bug"></i>
+                                    Report a Bug
+                                </button>
+
+                                <button class="btn btn-outline btn-block" id="featureRequestBtn">
+                                    <i class="fas fa-lightbulb"></i>
+                                    Request a Feature
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3 class="card-subtitle">About</h3>
+                            <div class="app-info">
+                                <div class="info-row">
+                                    <span>App Version</span>
+                                    <strong>2.1.4</strong>
+                                </div>
+                                <div class="info-row">
+                                    <span>Last Updated</span>
+                                    <strong>January 10, 2025</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Change Password Modal -->
+    <div class="modal-overlay" id="passwordModal" style="display: none;">
+        <div class="modal-panel">
+            <div class="modal-header">
+                <h3>Change Password</h3>
+                <button class="close-modal" id="closePasswordModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group-settings">
+                    <label for="currentPassword">Current Password</label>
+                    <input type="password" id="currentPassword" class="input-settings" placeholder="Enter current password">
+                </div>
+                <div class="form-group-settings">
+                    <label for="newPassword">New Password</label>
+                    <input type="password" id="newPassword" class="input-settings" placeholder="Enter new password">
+                </div>
+                <div class="form-group-settings">
+                    <label for="confirmPassword">Confirm New Password</label>
+                    <input type="password" id="confirmPassword" class="input-settings" placeholder="Confirm new password">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelPasswordBtn">Cancel</button>
+                <button class="btn btn-primary" id="confirmPasswordBtn">
+                    <i class="fas fa-key"></i>
+                    Change Password
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Account Confirmation Modal -->
+    <div class="modal-overlay" id="deleteAccountModal" style="display: none;">
+        <div class="modal-panel">
+            <div class="modal-header">
+                <h3>Delete Account</h3>
+                <button class="close-modal" id="closeDeleteAccountModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Are you absolutely sure?</strong></p>
+                <p>This action cannot be undone. This will permanently delete your account and remove all your data from our servers.</p>
+                <div class="form-group-settings">
+                    <label for="deleteConfirmText">Type "DELETE" to confirm</label>
+                    <input type="text" id="deleteConfirmText" class="input-settings" placeholder="DELETE">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelDeleteAccountBtn">Cancel</button>
+                <button class="btn btn-danger" id="confirmDeleteAccountBtn" disabled>
+                    <i class="fas fa-trash"></i>
+                    Delete My Account
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Settings Toggle -->
+    <button class="mobile-settings-toggle" id="mobileSettingsToggle">
+        <i class="fas fa-bars"></i>
+        <span>Menu</span>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

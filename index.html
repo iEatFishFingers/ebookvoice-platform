@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ebook Voice - Convert your ebooks to audiobooks or create ebooks from scratch">
+    <title>Ebook Voice - Transform Text into Audio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fas fa-book-reader"></i>
+                    <span>Ebook<span class="highlight">Voice</span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="#services">Services</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Transform Your <span class="gradient-text">Ebooks</span> into
+                    <span class="gradient-text">Audiobooks</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Experience the future of reading. Convert existing ebooks or create new ones,
+                    then bring them to life with high-quality AI voices.
+                </p>
+                <div class="hero-buttons">
+                    <a href="dashboard.html" class="btn btn-primary">
+                        <i class="fas fa-play-circle"></i>
+                        Get Started Free
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-book"></i>
+                        <div>
+                            <strong>10,000+</strong>
+                            <span>Books Converted</span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <strong>5,000+</strong>
+                            <span>Happy Users</span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>50,000+</strong>
+                            <span>Hours Listened</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Two powerful ways to create your audiobooks</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1: Convert Existing Ebooks -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-upload"></i>
+                    </div>
+                    <h3>Convert Existing Ebooks</h3>
+                    <p>Already have an ebook? Upload it and transform it into a professional audiobook in minutes.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Support for PDF, EPUB, MOBI formats</li>
+                        <li><i class="fas fa-check"></i> Multiple AI voice options</li>
+                        <li><i class="fas fa-check"></i> Natural-sounding narration</li>
+                        <li><i class="fas fa-check"></i> Download as MP3 or M4B</li>
+                    </ul>
+                    <a href="dashboard.html" class="btn btn-outline">Get Started</a>
+                </div>
+
+                <!-- Service 2: Create Ebooks from Scratch -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Create Ebooks from Scratch</h3>
+                    <p>Start with a blank canvas. Write, edit, and convert your original content into audiobooks.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Built-in text editor</li>
+                        <li><i class="fas fa-check"></i> Chapter organization tools</li>
+                        <li><i class="fas fa-check"></i> Real-time preview</li>
+                        <li><i class="fas fa-check"></i> Instant audio conversion</li>
+                    </ul>
+                    <a href="create.html" class="btn btn-outline">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Trial Highlight -->
+    <section class="trial-banner">
+        <div class="container">
+            <div class="trial-content">
+                <div class="trial-text">
+                    <h3><i class="fas fa-gift"></i> Try Before You Commit</h3>
+                    <p>Get 2 full conversions free every month. No credit card required.</p>
+                </div>
+                <a href="dashboard.html" class="btn btn-light">Start Free Trial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">Choose the plan that fits your needs</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Free Tier -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="currency">£</span>
+                            <span class="amount">0</span>
+                            <span class="period">/forever</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <strong>2 conversions</strong> per month</li>
+                        <li><i class="fas fa-check"></i> Up to <strong>10 audiobooks</strong></li>
+                        <li><i class="fas fa-check"></i> 47+ AI voice options</li>
+                        <li><i class="fas fa-check"></i> Standard quality audio</li>
+                        <li><i class="fas fa-times"></i> Priority support</li>
+                    </ul>
+                    <a href="dashboard.html" class="btn btn-outline">Get Started</a>
+                </div>
+
+                <!-- Tier 1 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">£</span>
+                            <span class="amount">9.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <strong>20 conversions</strong> per month</li>
+                        <li><i class="fas fa-check"></i> Up to <strong>50 audiobooks</strong></li>
+                        <li><i class="fas fa-check"></i> 47+ AI voice options</li>
+                        <li><i class="fas fa-check"></i> High-quality audio</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                    </ul>
+                    <a href="dashboard.html" class="btn btn-outline">Choose Plan</a>
+                </div>
+
+                <!-- Pro Tier (Popular) -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="currency">£</span>
+                            <span class="amount">19.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <strong>Unlimited conversions</strong></li>
+                        <li><i class="fas fa-check"></i> <strong>Unlimited audiobooks</strong></li>
+                        <li><i class="fas fa-check"></i> 47+ premium AI voices</li>
+                        <li><i class="fas fa-check"></i> Studio-quality audio</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Advanced editing tools</li>
+                    </ul>
+                    <a href="dashboard.html" class="btn btn-primary">Choose Plan</a>
+                </div>
+
+                <!-- Enterprise Tier -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="custom">Custom</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <strong>Everything in Pro</strong></li>
+                        <li><i class="fas fa-check"></i> Unlimited books</li>
+                        <li><i class="fas fa-check"></i> Custom AI voice training</li>
+                        <li><i class="fas fa-check"></i> API access</li>
+                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check"></i> 24/7 phone support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-book-reader"></i>
+                        <span>Ebook<span class="highlight">Voice</span></span>
+                    </div>
+                    <p>Transform your reading experience with AI-powered audiobook conversion.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="mailto:support@ebookvoice.ai">support@ebookvoice.ai</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 EbookVoice.ai. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

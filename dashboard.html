@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ebook Voice Dashboard - Manage your audiobooks and ebook projects">
+    <title>Dashboard - Ebook Voice</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fas fa-book-reader"></i>
+                    <span>Ebook<span class="highlight">Voice</span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="dashboard.html" class="active">Dashboard</a>
+                    <a href="index.html">Home</a>
+                    <a href="create.html">Create</a>
+                    <a href="settings.html">Settings</a>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="user-profile">
+                        <img src="https://ui-avatars.com/api/?name=John+Doe&background=6366f1&color=fff" alt="User Profile">
+                        <span class="user-name">John D.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <main class="dashboard-main">
+        <div class="container">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <div class="welcome-header">
+                    <div>
+                        <h1 class="welcome-title">Welcome back, <span class="gradient-text">John</span>! 👋</h1>
+                        <p class="welcome-subtitle">Here's what's happening with your audiobooks today.</p>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>12</h3>
+                            <p>Total Audiobooks</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+                            <i class="fas fa-spinner"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>3</h3>
+                            <p>Books in Progress</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                            <i class="fas fa-pen"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>8,542</h3>
+                            <p>Words This Month</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>24h 15m</h3>
+                            <p>Total Listening Time</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="quick-actions">
+                <h2 class="section-title-sm">Quick Actions</h2>
+                <div class="actions-grid">
+                    <a href="dashboard.html" class="action-card primary">
+                        <div class="action-icon">
+                            <i class="fas fa-file-upload"></i>
+                        </div>
+                        <h3>Convert New Ebook</h3>
+                        <p>Upload and transform your existing ebook</p>
+                    </a>
+
+                    <a href="create.html" class="action-card secondary">
+                        <div class="action-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <h3>Create from Scratch</h3>
+                        <p>Start writing your new ebook project</p>
+                    </a>
+
+                    <a href="dashboard.html" class="action-card tertiary">
+                        <div class="action-icon">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <h3>View All Projects</h3>
+                        <p>Browse your entire library</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Main Content Grid -->
+            <div class="content-grid">
+                <!-- Left Column: Audiobooks & In Progress -->
+                <div class="content-main">
+                    <!-- Converted Audiobooks Library -->
+                    <section class="library-section">
+                        <div class="section-header-inline">
+                            <h2 class="section-title-sm">Your Audiobooks</h2>
+                            <div class="library-controls">
+                                <select class="filter-select">
+                                    <option>Recent</option>
+                                    <option>A-Z</option>
+                                    <option>Z-A</option>
+                                    <option>Longest</option>
+                                    <option>Shortest</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="library-grid">
+                            <!-- Audiobook Card 1 -->
+                            <div class="audiobook-card">
+                                <div class="book-cover">
+                                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=400&fit=crop" alt="Book Cover">
+                                    <a href="player.html" class="play-overlay">
+                                        <button class="play-btn">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="book-info">
+                                    <h3>The Art of Storytelling</h3>
+                                    <p class="book-meta">
+                                        <i class="fas fa-clock"></i> 2h 45m
+                                        <span class="divider">•</span>
+                                        <i class="fas fa-calendar"></i> Dec 15, 2024
+                                    </p>
+                                    <div class="book-actions">
+                                        <button class="btn-icon" title="Download">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                        <button class="btn-icon" title="Share">
+                                            <i class="fas fa-share-alt"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Audiobook Card 2 -->
+                            <div class="audiobook-card">
+                                <div class="book-cover">
+                                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=300&h=400&fit=crop" alt="Book Cover">
+                                    <a href="player.html" class="play-overlay">
+                                        <button class="play-btn">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="book-info">
+                                    <h3>Digital Marketing 101</h3>
+                                    <p class="book-meta">
+                                        <i class="fas fa-clock"></i> 4h 12m
+                                        <span class="divider">•</span>
+                                        <i class="fas fa-calendar"></i> Dec 10, 2024
+                                    </p>
+                                    <div class="book-actions">
+                                        <button class="btn-icon" title="Download">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                        <button class="btn-icon" title="Share">
+                                            <i class="fas fa-share-alt"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Audiobook Card 3 -->
+                            <div class="audiobook-card">
+                                <div class="book-cover">
+                                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=400&fit=crop" alt="Book Cover">
+                                    <a href="player.html" class="play-overlay">
+                                        <button class="play-btn">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="book-info">
+                                    <h3>Journey Through Time</h3>
+                                    <p class="book-meta">
+                                        <i class="fas fa-clock"></i> 1h 35m
+                                        <span class="divider">•</span>
+                                        <i class="fas fa-calendar"></i> Dec 5, 2024
+                                    </p>
+                                    <div class="book-actions">
+                                        <button class="btn-icon" title="Download">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                        <button class="btn-icon" title="Share">
+                                            <i class="fas fa-share-alt"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ebooks in Progress -->
+                    <section class="progress-section">
+                        <div class="section-header-inline">
+                            <h2 class="section-title-sm">Books in Progress</h2>
+                            <a href="#all-progress" class="link-view-all">View All</a>
+                        </div>
+
+                        <div class="progress-grid">
+                            <!-- Progress Card 1 -->
+                            <div class="progress-card">
+                                <div class="progress-header">
+                                    <div class="progress-icon">
+                                        <i class="fas fa-book-open"></i>
+                                    </div>
+                                    <div class="progress-details">
+                                        <h3>My Travel Memoirs</h3>
+                                        <p class="progress-status">
+                                            <span class="status-badge converting">Converting</span>
+                                            <span class="word-count">3,450 words</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 65%"></div>
+                                    </div>
+                                    <span class="progress-percentage">65%</span>
+                                </div>
+                                <div class="progress-actions">
+                                    <a href="create.html" class="btn btn-outline btn-sm">
+                                        <i class="fas fa-arrow-right"></i>
+                                        Continue
+                                    </a>
+                                    <button class="btn-icon" title="Delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Progress Card 2 -->
+                            <div class="progress-card">
+                                <div class="progress-header">
+                                    <div class="progress-icon">
+                                        <i class="fas fa-book-open"></i>
+                                    </div>
+                                    <div class="progress-details">
+                                        <h3>Tech Innovations Guide</h3>
+                                        <p class="progress-status">
+                                            <span class="status-badge draft">Draft</span>
+                                            <span class="word-count">1,820 words</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 30%"></div>
+                                    </div>
+                                    <span class="progress-percentage">30%</span>
+                                </div>
+                                <div class="progress-actions">
+                                    <a href="create.html" class="btn btn-outline btn-sm">
+                                        <i class="fas fa-arrow-right"></i>
+                                        Continue
+                                    </a>
+                                    <button class="btn-icon" title="Delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Empty State (hidden by default, shown when no progress) -->
+                        <div class="empty-state" style="display: none;">
+                            <div class="empty-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3>No books in progress</h3>
+                            <p>Get started by converting your first ebook or creating a new one from scratch!</p>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-plus"></i>
+                                Start New Project
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Sidebar: Subscription Info -->
+                <aside class="sidebar">
+                    <!-- Subscription Widget -->
+                    <div class="subscription-widget">
+                        <div class="widget-header">
+                            <h3>Your Plan</h3>
+                            <span class="plan-badge pro">Pro</span>
+                        </div>
+                        <div class="widget-content">
+                            <div class="plan-info">
+                                <p class="plan-name">Professional Plan</p>
+                                <p class="plan-price">£19.99<span>/month</span></p>
+                            </div>
+
+                            <div class="usage-stats">
+                                <div class="usage-item">
+                                    <div class="usage-header">
+                                        <span>Books this month</span>
+                                        <span class="usage-value">1 / 2</span>
+                                    </div>
+                                    <div class="usage-bar">
+                                        <div class="usage-fill" style="width: 50%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="usage-item">
+                                    <div class="usage-header">
+                                        <span>Words used</span>
+                                        <span class="usage-value">8,542</span>
+                                    </div>
+                                    <div class="usage-bar">
+                                        <div class="usage-fill" style="width: 35%"></div>
+                                    </div>
+                                    <p class="usage-note">Unlimited words available</p>
+                                </div>
+                            </div>
+
+                            <div class="plan-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>20+ Premium Voices</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Studio Quality Audio</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Priority Support</span>
+                                </div>
+                            </div>
+
+                            <a href="settings.html#subscription" class="btn btn-outline btn-block">
+                                <i class="fas fa-cog"></i>
+                                Manage Plan
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity Widget -->
+                    <div class="activity-widget">
+                        <h3 class="widget-title">Recent Activity</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon success">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="activity-info">
+                                    <p class="activity-text">Audiobook converted successfully</p>
+                                    <p class="activity-time">2 hours ago</p>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon info">
+                                    <i class="fas fa-pen"></i>
+                                </div>
+                                <div class="activity-info">
+                                    <p class="activity-text">Started new project "My Travel Memoirs"</p>
+                                    <p class="activity-time">1 day ago</p>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon success">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                                <div class="activity-info">
+                                    <p class="activity-text">Downloaded "Digital Marketing 101"</p>
+                                    <p class="activity-time">3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Help Widget -->
+                    <div class="help-widget">
+                        <div class="help-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3>Need Help?</h3>
+                        <p>Check out our documentation or contact support.</p>
+                        <a href="#support" class="btn btn-secondary btn-sm btn-block">
+                            <i class="fas fa-life-ring"></i>
+                            Get Support
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

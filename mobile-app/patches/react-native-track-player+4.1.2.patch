@@ -1,0 +1,18 @@
+diff --git a/node_modules/react-native-track-player/ios/RNTrackPlayer/RNTrackPlayer.swift b/node_modules/react-native-track-player/ios/RNTrackPlayer/RNTrackPlayer.swift
+index 3be1342..04bae99 100644
+--- a/node_modules/react-native-track-player/ios/RNTrackPlayer/RNTrackPlayer.swift
++++ b/node_modules/react-native-track-player/ios/RNTrackPlayer/RNTrackPlayer.swift
+@@ -618,6 +618,13 @@ public class RNTrackPlayer: RCTEventEmitter, AudioSessionControllerDelegate {
+         if (rejectWhenNotInitialized(reject: reject)) { return }
+ 
+         player.rate = rate
++        // Keep MPNowPlayingInfoPropertyDefaultPlaybackRate in lockstep with the
++        // actual rate.  SwiftAudioEx only publishes PlaybackRate, so at any
++        // rate above 1.0 iOS reports the app as *fast-forwarding* to AVRCP
++        // (non-Apple Bluetooth) headsets; their play/pause key then only ever
++        // sends "play" and the listener cannot pause from the headset.
++        // https://developer.apple.com/forums/thread/654413
++        player.nowPlayingInfoController.set(keyValue: NowPlayingInfoProperty.defaultPlaybackRate(Double(rate)))
+         resolve(NSNull())
+     }
+ 

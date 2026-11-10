@@ -1,0 +1,1717 @@
+{
+  "timestamp": "2026-07-03T11:32:28.197959",
+  "voices": {
+    "ar-DZ-AminaNeural": {
+      "id": "ar-DZ-AminaNeural",
+      "name": "Amina (DZ Female)",
+      "description": "English Neural voice",
+      "locale": "ar-DZ",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-DZ-IsmaelNeural": {
+      "id": "ar-DZ-IsmaelNeural",
+      "name": "Ismael (DZ Male)",
+      "description": "English Neural voice",
+      "locale": "ar-DZ",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-BH-AliNeural": {
+      "id": "ar-BH-AliNeural",
+      "name": "Ali (BH Male)",
+      "description": "English Neural voice",
+      "locale": "ar-BH",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-BH-LailaNeural": {
+      "id": "ar-BH-LailaNeural",
+      "name": "Laila (BH Female)",
+      "description": "English Neural voice",
+      "locale": "ar-BH",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-EG-SalmaNeural": {
+      "id": "ar-EG-SalmaNeural",
+      "name": "Salma (EG Female)",
+      "description": "English Neural voice",
+      "locale": "ar-EG",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-EG-ShakirNeural": {
+      "id": "ar-EG-ShakirNeural",
+      "name": "Shakir (EG Male)",
+      "description": "English Neural voice",
+      "locale": "ar-EG",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-IQ-BasselNeural": {
+      "id": "ar-IQ-BasselNeural",
+      "name": "Bassel (IQ Male)",
+      "description": "English Neural voice",
+      "locale": "ar-IQ",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-IQ-RanaNeural": {
+      "id": "ar-IQ-RanaNeural",
+      "name": "Rana (IQ Female)",
+      "description": "English Neural voice",
+      "locale": "ar-IQ",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-JO-SanaNeural": {
+      "id": "ar-JO-SanaNeural",
+      "name": "Sana (JO Female)",
+      "description": "English Neural voice",
+      "locale": "ar-JO",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-JO-TaimNeural": {
+      "id": "ar-JO-TaimNeural",
+      "name": "Taim (JO Male)",
+      "description": "English Neural voice",
+      "locale": "ar-JO",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-KW-FahedNeural": {
+      "id": "ar-KW-FahedNeural",
+      "name": "Fahed (KW Male)",
+      "description": "English Neural voice",
+      "locale": "ar-KW",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-KW-NouraNeural": {
+      "id": "ar-KW-NouraNeural",
+      "name": "Noura (KW Female)",
+      "description": "English Neural voice",
+      "locale": "ar-KW",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-LB-LaylaNeural": {
+      "id": "ar-LB-LaylaNeural",
+      "name": "Layla (LB Female)",
+      "description": "English Neural voice",
+      "locale": "ar-LB",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-LB-RamiNeural": {
+      "id": "ar-LB-RamiNeural",
+      "name": "Rami (LB Male)",
+      "description": "English Neural voice",
+      "locale": "ar-LB",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-LY-ImanNeural": {
+      "id": "ar-LY-ImanNeural",
+      "name": "Iman (LY Female)",
+      "description": "English Neural voice",
+      "locale": "ar-LY",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-LY-OmarNeural": {
+      "id": "ar-LY-OmarNeural",
+      "name": "Omar (LY Male)",
+      "description": "English Neural voice",
+      "locale": "ar-LY",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-MA-JamalNeural": {
+      "id": "ar-MA-JamalNeural",
+      "name": "Jamal (MA Male)",
+      "description": "English Neural voice",
+      "locale": "ar-MA",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-MA-MounaNeural": {
+      "id": "ar-MA-MounaNeural",
+      "name": "Mouna (MA Female)",
+      "description": "English Neural voice",
+      "locale": "ar-MA",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-OM-AbdullahNeural": {
+      "id": "ar-OM-AbdullahNeural",
+      "name": "Abdullah (OM Male)",
+      "description": "English Neural voice",
+      "locale": "ar-OM",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-OM-AyshaNeural": {
+      "id": "ar-OM-AyshaNeural",
+      "name": "Aysha (OM Female)",
+      "description": "English Neural voice",
+      "locale": "ar-OM",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-QA-AmalNeural": {
+      "id": "ar-QA-AmalNeural",
+      "name": "Amal (QA Female)",
+      "description": "English Neural voice",
+      "locale": "ar-QA",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-QA-MoazNeural": {
+      "id": "ar-QA-MoazNeural",
+      "name": "Moaz (QA Male)",
+      "description": "English Neural voice",
+      "locale": "ar-QA",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-SA-HamedNeural": {
+      "id": "ar-SA-HamedNeural",
+      "name": "Hamed (SA Male)",
+      "description": "English Neural voice",
+      "locale": "ar-SA",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-SA-ZariyahNeural": {
+      "id": "ar-SA-ZariyahNeural",
+      "name": "Zariyah (SA Female)",
+      "description": "English Neural voice",
+      "locale": "ar-SA",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-SY-AmanyNeural": {
+      "id": "ar-SY-AmanyNeural",
+      "name": "Amany (SY Female)",
+      "description": "English Neural voice",
+      "locale": "ar-SY",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-SY-LaithNeural": {
+      "id": "ar-SY-LaithNeural",
+      "name": "Laith (SY Male)",
+      "description": "English Neural voice",
+      "locale": "ar-SY",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-TN-HediNeural": {
+      "id": "ar-TN-HediNeural",
+      "name": "Hedi (TN Male)",
+      "description": "English Neural voice",
+      "locale": "ar-TN",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-TN-ReemNeural": {
+      "id": "ar-TN-ReemNeural",
+      "name": "Reem (TN Female)",
+      "description": "English Neural voice",
+      "locale": "ar-TN",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-AE-FatimaNeural": {
+      "id": "ar-AE-FatimaNeural",
+      "name": "Fatima (AE Female)",
+      "description": "English Neural voice",
+      "locale": "ar-AE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-AE-HamdanNeural": {
+      "id": "ar-AE-HamdanNeural",
+      "name": "Hamdan (AE Male)",
+      "description": "English Neural voice",
+      "locale": "ar-AE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ar-YE-MaryamNeural": {
+      "id": "ar-YE-MaryamNeural",
+      "name": "Maryam (YE Female)",
+      "description": "English Neural voice",
+      "locale": "ar-YE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ar-YE-SalehNeural": {
+      "id": "ar-YE-SalehNeural",
+      "name": "Saleh (YE Male)",
+      "description": "English Neural voice",
+      "locale": "ar-YE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "zh-HK-HiuGaaiNeural": {
+      "id": "zh-HK-HiuGaaiNeural",
+      "name": "HiuGaai (HK Female)",
+      "description": "English Neural voice",
+      "locale": "zh-HK",
+      "gender": "Female",
+      "status": "active"
+    },
+    "zh-HK-HiuMaanNeural": {
+      "id": "zh-HK-HiuMaanNeural",
+      "name": "HiuMaan (HK Female)",
+      "description": "English Neural voice",
+      "locale": "zh-HK",
+      "gender": "Female",
+      "status": "active"
+    },
+    "zh-HK-WanLungNeural": {
+      "id": "zh-HK-WanLungNeural",
+      "name": "WanLung (HK Male)",
+      "description": "English Neural voice",
+      "locale": "zh-HK",
+      "gender": "Male",
+      "status": "active"
+    },
+    "zh-CN-XiaoxiaoNeural": {
+      "id": "zh-CN-XiaoxiaoNeural",
+      "name": "Xiaoxiao (CN Female)",
+      "description": "English Neural voice",
+      "locale": "zh-CN",
+      "gender": "Female",
+      "status": "active"
+    },
+    "zh-CN-XiaoyiNeural": {
+      "id": "zh-CN-XiaoyiNeural",
+      "name": "Xiaoyi (CN Female)",
+      "description": "English Neural voice",
+      "locale": "zh-CN",
+      "gender": "Female",
+      "status": "active"
+    },
+    "zh-CN-YunjianNeural": {
+      "id": "zh-CN-YunjianNeural",
+      "name": "Yunjian (CN Male)",
+      "description": "English Neural voice",
+      "locale": "zh-CN",
+      "gender": "Male",
+      "status": "active"
+    },
+    "zh-CN-YunxiNeural": {
+      "id": "zh-CN-YunxiNeural",
+      "name": "Yunxi (CN Male)",
+      "description": "English Neural voice",
+      "locale": "zh-CN",
+      "gender": "Male",
+      "status": "active"
+    },
+    "zh-CN-YunxiaNeural": {
+      "id": "zh-CN-YunxiaNeural",
+      "name": "Yunxia (CN Male)",
+      "description": "English Neural voice",
+      "locale": "zh-CN",
+      "gender": "Male",
+      "status": "active"
+    },
+    "zh-CN-YunyangNeural": {
+      "id": "zh-CN-YunyangNeural",
+      "name": "Yunyang (CN Male)",
+      "description": "English Neural voice",
+      "locale": "zh-CN",
+      "gender": "Male",
+      "status": "active"
+    },
+    "zh-CN-liaoning-XiaobeiNeural": {
+      "id": "zh-CN-liaoning-XiaobeiNeural",
+      "name": "Xiaobei (liaoning Female)",
+      "description": "English Neural voice",
+      "locale": "zh-CN-liaoning",
+      "gender": "Female",
+      "status": "active"
+    },
+    "zh-TW-HsiaoChenNeural": {
+      "id": "zh-TW-HsiaoChenNeural",
+      "name": "HsiaoChen (TW Female)",
+      "description": "English Neural voice",
+      "locale": "zh-TW",
+      "gender": "Female",
+      "status": "active"
+    },
+    "zh-TW-YunJheNeural": {
+      "id": "zh-TW-YunJheNeural",
+      "name": "YunJhe (TW Male)",
+      "description": "English Neural voice",
+      "locale": "zh-TW",
+      "gender": "Male",
+      "status": "active"
+    },
+    "zh-TW-HsiaoYuNeural": {
+      "id": "zh-TW-HsiaoYuNeural",
+      "name": "HsiaoYu (TW Female)",
+      "description": "English Neural voice",
+      "locale": "zh-TW",
+      "gender": "Female",
+      "status": "active"
+    },
+    "zh-CN-shaanxi-XiaoniNeural": {
+      "id": "zh-CN-shaanxi-XiaoniNeural",
+      "name": "Xiaoni (shaanxi Female)",
+      "description": "English Neural voice",
+      "locale": "zh-CN-shaanxi",
+      "gender": "Female",
+      "status": "active"
+    },
+    "cs-CZ-AntoninNeural": {
+      "id": "cs-CZ-AntoninNeural",
+      "name": "Antonin (CZ Male)",
+      "description": "English Neural voice",
+      "locale": "cs-CZ",
+      "gender": "Male",
+      "status": "active"
+    },
+    "cs-CZ-VlastaNeural": {
+      "id": "cs-CZ-VlastaNeural",
+      "name": "Vlasta (CZ Female)",
+      "description": "English Neural voice",
+      "locale": "cs-CZ",
+      "gender": "Female",
+      "status": "active"
+    },
+    "da-DK-ChristelNeural": {
+      "id": "da-DK-ChristelNeural",
+      "name": "Christel (DK Female)",
+      "description": "English Neural voice",
+      "locale": "da-DK",
+      "gender": "Female",
+      "status": "active"
+    },
+    "da-DK-JeppeNeural": {
+      "id": "da-DK-JeppeNeural",
+      "name": "Jeppe (DK Male)",
+      "description": "English Neural voice",
+      "locale": "da-DK",
+      "gender": "Male",
+      "status": "active"
+    },
+    "nl-BE-ArnaudNeural": {
+      "id": "nl-BE-ArnaudNeural",
+      "name": "Arnaud (BE Male)",
+      "description": "English Neural voice",
+      "locale": "nl-BE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "nl-BE-DenaNeural": {
+      "id": "nl-BE-DenaNeural",
+      "name": "Dena (BE Female)",
+      "description": "English Neural voice",
+      "locale": "nl-BE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "nl-NL-ColetteNeural": {
+      "id": "nl-NL-ColetteNeural",
+      "name": "Colette (NL Female)",
+      "description": "English Neural voice",
+      "locale": "nl-NL",
+      "gender": "Female",
+      "status": "active"
+    },
+    "nl-NL-FennaNeural": {
+      "id": "nl-NL-FennaNeural",
+      "name": "Fenna (NL Female)",
+      "description": "English Neural voice",
+      "locale": "nl-NL",
+      "gender": "Female",
+      "status": "active"
+    },
+    "nl-NL-MaartenNeural": {
+      "id": "nl-NL-MaartenNeural",
+      "name": "Maarten (NL Male)",
+      "description": "English Neural voice",
+      "locale": "nl-NL",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-AU-WilliamMultilingualNeural": {
+      "id": "en-AU-WilliamMultilingualNeural",
+      "name": "WilliamMultilingual (AU Male)",
+      "description": "Australian English Neural voice",
+      "locale": "en-AU",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-AU-NatashaNeural": {
+      "id": "en-AU-NatashaNeural",
+      "name": "Natasha (AU Female)",
+      "description": "Australian English Neural voice",
+      "locale": "en-AU",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-CA-ClaraNeural": {
+      "id": "en-CA-ClaraNeural",
+      "name": "Clara (CA Female)",
+      "description": "Canadian English Neural voice",
+      "locale": "en-CA",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-CA-LiamNeural": {
+      "id": "en-CA-LiamNeural",
+      "name": "Liam (CA Male)",
+      "description": "Canadian English Neural voice",
+      "locale": "en-CA",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-HK-YanNeural": {
+      "id": "en-HK-YanNeural",
+      "name": "Yan (HK Female)",
+      "description": "English Neural voice",
+      "locale": "en-HK",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-HK-SamNeural": {
+      "id": "en-HK-SamNeural",
+      "name": "Sam (HK Male)",
+      "description": "English Neural voice",
+      "locale": "en-HK",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-IN-NeerjaExpressiveNeural": {
+      "id": "en-IN-NeerjaExpressiveNeural",
+      "name": "NeerjaExpressive (IN Female)",
+      "description": "Indian English Neural voice",
+      "locale": "en-IN",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-IN-NeerjaNeural": {
+      "id": "en-IN-NeerjaNeural",
+      "name": "Neerja (IN Female)",
+      "description": "Indian English Neural voice",
+      "locale": "en-IN",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-IN-PrabhatNeural": {
+      "id": "en-IN-PrabhatNeural",
+      "name": "Prabhat (IN Male)",
+      "description": "Indian English Neural voice",
+      "locale": "en-IN",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-IE-ConnorNeural": {
+      "id": "en-IE-ConnorNeural",
+      "name": "Connor (IE Male)",
+      "description": "Irish English Neural voice",
+      "locale": "en-IE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-IE-EmilyNeural": {
+      "id": "en-IE-EmilyNeural",
+      "name": "Emily (IE Female)",
+      "description": "Irish English Neural voice",
+      "locale": "en-IE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-KE-AsiliaNeural": {
+      "id": "en-KE-AsiliaNeural",
+      "name": "Asilia (KE Female)",
+      "description": "English Neural voice",
+      "locale": "en-KE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-KE-ChilembaNeural": {
+      "id": "en-KE-ChilembaNeural",
+      "name": "Chilemba (KE Male)",
+      "description": "English Neural voice",
+      "locale": "en-KE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-NZ-MitchellNeural": {
+      "id": "en-NZ-MitchellNeural",
+      "name": "Mitchell (NZ Male)",
+      "description": "New Zealand English Neural voice",
+      "locale": "en-NZ",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-NZ-MollyNeural": {
+      "id": "en-NZ-MollyNeural",
+      "name": "Molly (NZ Female)",
+      "description": "New Zealand English Neural voice",
+      "locale": "en-NZ",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-NG-AbeoNeural": {
+      "id": "en-NG-AbeoNeural",
+      "name": "Abeo (NG Male)",
+      "description": "English Neural voice",
+      "locale": "en-NG",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-NG-EzinneNeural": {
+      "id": "en-NG-EzinneNeural",
+      "name": "Ezinne (NG Female)",
+      "description": "English Neural voice",
+      "locale": "en-NG",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-PH-JamesNeural": {
+      "id": "en-PH-JamesNeural",
+      "name": "James (PH Male)",
+      "description": "English Neural voice",
+      "locale": "en-PH",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-PH-RosaNeural": {
+      "id": "en-PH-RosaNeural",
+      "name": "Rosa (PH Female)",
+      "description": "English Neural voice",
+      "locale": "en-PH",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-US-AvaNeural": {
+      "id": "en-US-AvaNeural",
+      "name": "Ava (US Female)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-US-AndrewNeural": {
+      "id": "en-US-AndrewNeural",
+      "name": "Andrew (US Male)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-US-EmmaNeural": {
+      "id": "en-US-EmmaNeural",
+      "name": "Emma (US Female)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-US-BrianNeural": {
+      "id": "en-US-BrianNeural",
+      "name": "Brian (US Male)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-SG-LunaNeural": {
+      "id": "en-SG-LunaNeural",
+      "name": "Luna (SG Female)",
+      "description": "English Neural voice",
+      "locale": "en-SG",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-SG-WayneNeural": {
+      "id": "en-SG-WayneNeural",
+      "name": "Wayne (SG Male)",
+      "description": "English Neural voice",
+      "locale": "en-SG",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-ZA-LeahNeural": {
+      "id": "en-ZA-LeahNeural",
+      "name": "Leah (ZA Female)",
+      "description": "South African English Neural voice",
+      "locale": "en-ZA",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-ZA-LukeNeural": {
+      "id": "en-ZA-LukeNeural",
+      "name": "Luke (ZA Male)",
+      "description": "South African English Neural voice",
+      "locale": "en-ZA",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-TZ-ElimuNeural": {
+      "id": "en-TZ-ElimuNeural",
+      "name": "Elimu (TZ Male)",
+      "description": "English Neural voice",
+      "locale": "en-TZ",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-TZ-ImaniNeural": {
+      "id": "en-TZ-ImaniNeural",
+      "name": "Imani (TZ Female)",
+      "description": "English Neural voice",
+      "locale": "en-TZ",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-GB-LibbyNeural": {
+      "id": "en-GB-LibbyNeural",
+      "name": "Libby (UK Female)",
+      "description": "British English Neural voice",
+      "locale": "en-GB",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-GB-MaisieNeural": {
+      "id": "en-GB-MaisieNeural",
+      "name": "Maisie (UK Female)",
+      "description": "British English Neural voice",
+      "locale": "en-GB",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-GB-RyanNeural": {
+      "id": "en-GB-RyanNeural",
+      "name": "Ryan (UK Male)",
+      "description": "British English Neural voice",
+      "locale": "en-GB",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-GB-SoniaNeural": {
+      "id": "en-GB-SoniaNeural",
+      "name": "Sonia (UK Female)",
+      "description": "British English Neural voice",
+      "locale": "en-GB",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-GB-ThomasNeural": {
+      "id": "en-GB-ThomasNeural",
+      "name": "Thomas (UK Male)",
+      "description": "British English Neural voice",
+      "locale": "en-GB",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-US-AnaNeural": {
+      "id": "en-US-AnaNeural",
+      "name": "Ana (US Female)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-US-AndrewMultilingualNeural": {
+      "id": "en-US-AndrewMultilingualNeural",
+      "name": "AndrewMultilingual (US Male)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-US-AriaNeural": {
+      "id": "en-US-AriaNeural",
+      "name": "Aria (US Female)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-US-AvaMultilingualNeural": {
+      "id": "en-US-AvaMultilingualNeural",
+      "name": "AvaMultilingual (US Female)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-US-BrianMultilingualNeural": {
+      "id": "en-US-BrianMultilingualNeural",
+      "name": "BrianMultilingual (US Male)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-US-ChristopherNeural": {
+      "id": "en-US-ChristopherNeural",
+      "name": "Christopher (US Male)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-US-EmmaMultilingualNeural": {
+      "id": "en-US-EmmaMultilingualNeural",
+      "name": "EmmaMultilingual (US Female)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-US-EricNeural": {
+      "id": "en-US-EricNeural",
+      "name": "Eric (US Male)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-US-GuyNeural": {
+      "id": "en-US-GuyNeural",
+      "name": "Guy (US Male)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-US-JennyNeural": {
+      "id": "en-US-JennyNeural",
+      "name": "Jenny (US Female)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-US-MichelleNeural": {
+      "id": "en-US-MichelleNeural",
+      "name": "Michelle (US Female)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Female",
+      "status": "active"
+    },
+    "en-US-RogerNeural": {
+      "id": "en-US-RogerNeural",
+      "name": "Roger (US Male)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Male",
+      "status": "active"
+    },
+    "en-US-SteffanNeural": {
+      "id": "en-US-SteffanNeural",
+      "name": "Steffan (US Male)",
+      "description": "American English Neural voice",
+      "locale": "en-US",
+      "gender": "Male",
+      "status": "active"
+    },
+    "fil-PH-AngeloNeural": {
+      "id": "fil-PH-AngeloNeural",
+      "name": "Angelo (PH Male)",
+      "description": "English Neural voice",
+      "locale": "fil-PH",
+      "gender": "Male",
+      "status": "active"
+    },
+    "fil-PH-BlessicaNeural": {
+      "id": "fil-PH-BlessicaNeural",
+      "name": "Blessica (PH Female)",
+      "description": "English Neural voice",
+      "locale": "fil-PH",
+      "gender": "Female",
+      "status": "active"
+    },
+    "fi-FI-HarriNeural": {
+      "id": "fi-FI-HarriNeural",
+      "name": "Harri (FI Male)",
+      "description": "English Neural voice",
+      "locale": "fi-FI",
+      "gender": "Male",
+      "status": "active"
+    },
+    "fi-FI-NooraNeural": {
+      "id": "fi-FI-NooraNeural",
+      "name": "Noora (FI Female)",
+      "description": "English Neural voice",
+      "locale": "fi-FI",
+      "gender": "Female",
+      "status": "active"
+    },
+    "fr-BE-CharlineNeural": {
+      "id": "fr-BE-CharlineNeural",
+      "name": "Charline (BE Female)",
+      "description": "English Neural voice",
+      "locale": "fr-BE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "fr-BE-GerardNeural": {
+      "id": "fr-BE-GerardNeural",
+      "name": "Gerard (BE Male)",
+      "description": "English Neural voice",
+      "locale": "fr-BE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "fr-CA-ThierryNeural": {
+      "id": "fr-CA-ThierryNeural",
+      "name": "Thierry (CA Male)",
+      "description": "English Neural voice",
+      "locale": "fr-CA",
+      "gender": "Male",
+      "status": "active"
+    },
+    "fr-CA-AntoineNeural": {
+      "id": "fr-CA-AntoineNeural",
+      "name": "Antoine (CA Male)",
+      "description": "English Neural voice",
+      "locale": "fr-CA",
+      "gender": "Male",
+      "status": "active"
+    },
+    "fr-CA-JeanNeural": {
+      "id": "fr-CA-JeanNeural",
+      "name": "Jean (CA Male)",
+      "description": "English Neural voice",
+      "locale": "fr-CA",
+      "gender": "Male",
+      "status": "active"
+    },
+    "fr-CA-SylvieNeural": {
+      "id": "fr-CA-SylvieNeural",
+      "name": "Sylvie (CA Female)",
+      "description": "English Neural voice",
+      "locale": "fr-CA",
+      "gender": "Female",
+      "status": "active"
+    },
+    "fr-FR-VivienneMultilingualNeural": {
+      "id": "fr-FR-VivienneMultilingualNeural",
+      "name": "VivienneMultilingual (FR Female)",
+      "description": "English Neural voice",
+      "locale": "fr-FR",
+      "gender": "Female",
+      "status": "active"
+    },
+    "fr-FR-RemyMultilingualNeural": {
+      "id": "fr-FR-RemyMultilingualNeural",
+      "name": "RemyMultilingual (FR Male)",
+      "description": "English Neural voice",
+      "locale": "fr-FR",
+      "gender": "Male",
+      "status": "active"
+    },
+    "fr-FR-DeniseNeural": {
+      "id": "fr-FR-DeniseNeural",
+      "name": "Denise (FR Female)",
+      "description": "English Neural voice",
+      "locale": "fr-FR",
+      "gender": "Female",
+      "status": "active"
+    },
+    "fr-FR-EloiseNeural": {
+      "id": "fr-FR-EloiseNeural",
+      "name": "Eloise (FR Female)",
+      "description": "English Neural voice",
+      "locale": "fr-FR",
+      "gender": "Female",
+      "status": "active"
+    },
+    "fr-FR-HenriNeural": {
+      "id": "fr-FR-HenriNeural",
+      "name": "Henri (FR Male)",
+      "description": "English Neural voice",
+      "locale": "fr-FR",
+      "gender": "Male",
+      "status": "active"
+    },
+    "fr-CH-ArianeNeural": {
+      "id": "fr-CH-ArianeNeural",
+      "name": "Ariane (CH Female)",
+      "description": "English Neural voice",
+      "locale": "fr-CH",
+      "gender": "Female",
+      "status": "active"
+    },
+    "fr-CH-FabriceNeural": {
+      "id": "fr-CH-FabriceNeural",
+      "name": "Fabrice (CH Male)",
+      "description": "English Neural voice",
+      "locale": "fr-CH",
+      "gender": "Male",
+      "status": "active"
+    },
+    "de-AT-IngridNeural": {
+      "id": "de-AT-IngridNeural",
+      "name": "Ingrid (AT Female)",
+      "description": "English Neural voice",
+      "locale": "de-AT",
+      "gender": "Female",
+      "status": "active"
+    },
+    "de-AT-JonasNeural": {
+      "id": "de-AT-JonasNeural",
+      "name": "Jonas (AT Male)",
+      "description": "English Neural voice",
+      "locale": "de-AT",
+      "gender": "Male",
+      "status": "active"
+    },
+    "de-DE-SeraphinaMultilingualNeural": {
+      "id": "de-DE-SeraphinaMultilingualNeural",
+      "name": "SeraphinaMultilingual (DE Female)",
+      "description": "English Neural voice",
+      "locale": "de-DE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "de-DE-FlorianMultilingualNeural": {
+      "id": "de-DE-FlorianMultilingualNeural",
+      "name": "FlorianMultilingual (DE Male)",
+      "description": "English Neural voice",
+      "locale": "de-DE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "de-DE-AmalaNeural": {
+      "id": "de-DE-AmalaNeural",
+      "name": "Amala (DE Female)",
+      "description": "English Neural voice",
+      "locale": "de-DE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "de-DE-ConradNeural": {
+      "id": "de-DE-ConradNeural",
+      "name": "Conrad (DE Male)",
+      "description": "English Neural voice",
+      "locale": "de-DE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "de-DE-KatjaNeural": {
+      "id": "de-DE-KatjaNeural",
+      "name": "Katja (DE Female)",
+      "description": "English Neural voice",
+      "locale": "de-DE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "de-DE-KillianNeural": {
+      "id": "de-DE-KillianNeural",
+      "name": "Killian (DE Male)",
+      "description": "English Neural voice",
+      "locale": "de-DE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "de-CH-JanNeural": {
+      "id": "de-CH-JanNeural",
+      "name": "Jan (CH Male)",
+      "description": "English Neural voice",
+      "locale": "de-CH",
+      "gender": "Male",
+      "status": "active"
+    },
+    "de-CH-LeniNeural": {
+      "id": "de-CH-LeniNeural",
+      "name": "Leni (CH Female)",
+      "description": "English Neural voice",
+      "locale": "de-CH",
+      "gender": "Female",
+      "status": "active"
+    },
+    "el-GR-AthinaNeural": {
+      "id": "el-GR-AthinaNeural",
+      "name": "Athina (GR Female)",
+      "description": "English Neural voice",
+      "locale": "el-GR",
+      "gender": "Female",
+      "status": "active"
+    },
+    "el-GR-NestorasNeural": {
+      "id": "el-GR-NestorasNeural",
+      "name": "Nestoras (GR Male)",
+      "description": "English Neural voice",
+      "locale": "el-GR",
+      "gender": "Male",
+      "status": "active"
+    },
+    "he-IL-AvriNeural": {
+      "id": "he-IL-AvriNeural",
+      "name": "Avri (IL Male)",
+      "description": "English Neural voice",
+      "locale": "he-IL",
+      "gender": "Male",
+      "status": "active"
+    },
+    "he-IL-HilaNeural": {
+      "id": "he-IL-HilaNeural",
+      "name": "Hila (IL Female)",
+      "description": "English Neural voice",
+      "locale": "he-IL",
+      "gender": "Female",
+      "status": "active"
+    },
+    "hi-IN-MadhurNeural": {
+      "id": "hi-IN-MadhurNeural",
+      "name": "Madhur (IN Male)",
+      "description": "English Neural voice",
+      "locale": "hi-IN",
+      "gender": "Male",
+      "status": "active"
+    },
+    "hi-IN-SwaraNeural": {
+      "id": "hi-IN-SwaraNeural",
+      "name": "Swara (IN Female)",
+      "description": "English Neural voice",
+      "locale": "hi-IN",
+      "gender": "Female",
+      "status": "active"
+    },
+    "hu-HU-NoemiNeural": {
+      "id": "hu-HU-NoemiNeural",
+      "name": "Noemi (HU Female)",
+      "description": "English Neural voice",
+      "locale": "hu-HU",
+      "gender": "Female",
+      "status": "active"
+    },
+    "hu-HU-TamasNeural": {
+      "id": "hu-HU-TamasNeural",
+      "name": "Tamas (HU Male)",
+      "description": "English Neural voice",
+      "locale": "hu-HU",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ga-IE-ColmNeural": {
+      "id": "ga-IE-ColmNeural",
+      "name": "Colm (IE Male)",
+      "description": "English Neural voice",
+      "locale": "ga-IE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ga-IE-OrlaNeural": {
+      "id": "ga-IE-OrlaNeural",
+      "name": "Orla (IE Female)",
+      "description": "English Neural voice",
+      "locale": "ga-IE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "it-IT-GiuseppeMultilingualNeural": {
+      "id": "it-IT-GiuseppeMultilingualNeural",
+      "name": "GiuseppeMultilingual (IT Male)",
+      "description": "English Neural voice",
+      "locale": "it-IT",
+      "gender": "Male",
+      "status": "active"
+    },
+    "it-IT-DiegoNeural": {
+      "id": "it-IT-DiegoNeural",
+      "name": "Diego (IT Male)",
+      "description": "English Neural voice",
+      "locale": "it-IT",
+      "gender": "Male",
+      "status": "active"
+    },
+    "it-IT-ElsaNeural": {
+      "id": "it-IT-ElsaNeural",
+      "name": "Elsa (IT Female)",
+      "description": "English Neural voice",
+      "locale": "it-IT",
+      "gender": "Female",
+      "status": "active"
+    },
+    "it-IT-IsabellaNeural": {
+      "id": "it-IT-IsabellaNeural",
+      "name": "Isabella (IT Female)",
+      "description": "English Neural voice",
+      "locale": "it-IT",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ja-JP-KeitaNeural": {
+      "id": "ja-JP-KeitaNeural",
+      "name": "Keita (JP Male)",
+      "description": "English Neural voice",
+      "locale": "ja-JP",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ja-JP-NanamiNeural": {
+      "id": "ja-JP-NanamiNeural",
+      "name": "Nanami (JP Female)",
+      "description": "English Neural voice",
+      "locale": "ja-JP",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ko-KR-HyunsuMultilingualNeural": {
+      "id": "ko-KR-HyunsuMultilingualNeural",
+      "name": "HyunsuMultilingual (KR Male)",
+      "description": "English Neural voice",
+      "locale": "ko-KR",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ko-KR-InJoonNeural": {
+      "id": "ko-KR-InJoonNeural",
+      "name": "InJoon (KR Male)",
+      "description": "English Neural voice",
+      "locale": "ko-KR",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ko-KR-SunHiNeural": {
+      "id": "ko-KR-SunHiNeural",
+      "name": "SunHi (KR Female)",
+      "description": "English Neural voice",
+      "locale": "ko-KR",
+      "gender": "Female",
+      "status": "active"
+    },
+    "nb-NO-FinnNeural": {
+      "id": "nb-NO-FinnNeural",
+      "name": "Finn (NO Male)",
+      "description": "English Neural voice",
+      "locale": "nb-NO",
+      "gender": "Male",
+      "status": "active"
+    },
+    "nb-NO-PernilleNeural": {
+      "id": "nb-NO-PernilleNeural",
+      "name": "Pernille (NO Female)",
+      "description": "English Neural voice",
+      "locale": "nb-NO",
+      "gender": "Female",
+      "status": "active"
+    },
+    "pl-PL-MarekNeural": {
+      "id": "pl-PL-MarekNeural",
+      "name": "Marek (PL Male)",
+      "description": "English Neural voice",
+      "locale": "pl-PL",
+      "gender": "Male",
+      "status": "active"
+    },
+    "pl-PL-ZofiaNeural": {
+      "id": "pl-PL-ZofiaNeural",
+      "name": "Zofia (PL Female)",
+      "description": "English Neural voice",
+      "locale": "pl-PL",
+      "gender": "Female",
+      "status": "active"
+    },
+    "pt-BR-ThalitaMultilingualNeural": {
+      "id": "pt-BR-ThalitaMultilingualNeural",
+      "name": "ThalitaMultilingual (BR Female)",
+      "description": "English Neural voice",
+      "locale": "pt-BR",
+      "gender": "Female",
+      "status": "active"
+    },
+    "pt-BR-AntonioNeural": {
+      "id": "pt-BR-AntonioNeural",
+      "name": "Antonio (BR Male)",
+      "description": "English Neural voice",
+      "locale": "pt-BR",
+      "gender": "Male",
+      "status": "active"
+    },
+    "pt-BR-FranciscaNeural": {
+      "id": "pt-BR-FranciscaNeural",
+      "name": "Francisca (BR Female)",
+      "description": "English Neural voice",
+      "locale": "pt-BR",
+      "gender": "Female",
+      "status": "active"
+    },
+    "pt-PT-DuarteNeural": {
+      "id": "pt-PT-DuarteNeural",
+      "name": "Duarte (PT Male)",
+      "description": "English Neural voice",
+      "locale": "pt-PT",
+      "gender": "Male",
+      "status": "active"
+    },
+    "pt-PT-RaquelNeural": {
+      "id": "pt-PT-RaquelNeural",
+      "name": "Raquel (PT Female)",
+      "description": "English Neural voice",
+      "locale": "pt-PT",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ro-RO-AlinaNeural": {
+      "id": "ro-RO-AlinaNeural",
+      "name": "Alina (RO Female)",
+      "description": "English Neural voice",
+      "locale": "ro-RO",
+      "gender": "Female",
+      "status": "active"
+    },
+    "ro-RO-EmilNeural": {
+      "id": "ro-RO-EmilNeural",
+      "name": "Emil (RO Male)",
+      "description": "English Neural voice",
+      "locale": "ro-RO",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ru-RU-DmitryNeural": {
+      "id": "ru-RU-DmitryNeural",
+      "name": "Dmitry (RU Male)",
+      "description": "English Neural voice",
+      "locale": "ru-RU",
+      "gender": "Male",
+      "status": "active"
+    },
+    "ru-RU-SvetlanaNeural": {
+      "id": "ru-RU-SvetlanaNeural",
+      "name": "Svetlana (RU Female)",
+      "description": "English Neural voice",
+      "locale": "ru-RU",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-AR-ElenaNeural": {
+      "id": "es-AR-ElenaNeural",
+      "name": "Elena (AR Female)",
+      "description": "English Neural voice",
+      "locale": "es-AR",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-AR-TomasNeural": {
+      "id": "es-AR-TomasNeural",
+      "name": "Tomas (AR Male)",
+      "description": "English Neural voice",
+      "locale": "es-AR",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-BO-MarceloNeural": {
+      "id": "es-BO-MarceloNeural",
+      "name": "Marcelo (BO Male)",
+      "description": "English Neural voice",
+      "locale": "es-BO",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-BO-SofiaNeural": {
+      "id": "es-BO-SofiaNeural",
+      "name": "Sofia (BO Female)",
+      "description": "English Neural voice",
+      "locale": "es-BO",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-CL-CatalinaNeural": {
+      "id": "es-CL-CatalinaNeural",
+      "name": "Catalina (CL Female)",
+      "description": "English Neural voice",
+      "locale": "es-CL",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-CL-LorenzoNeural": {
+      "id": "es-CL-LorenzoNeural",
+      "name": "Lorenzo (CL Male)",
+      "description": "English Neural voice",
+      "locale": "es-CL",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-CO-GonzaloNeural": {
+      "id": "es-CO-GonzaloNeural",
+      "name": "Gonzalo (CO Male)",
+      "description": "English Neural voice",
+      "locale": "es-CO",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-CO-SalomeNeural": {
+      "id": "es-CO-SalomeNeural",
+      "name": "Salome (CO Female)",
+      "description": "English Neural voice",
+      "locale": "es-CO",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-ES-XimenaNeural": {
+      "id": "es-ES-XimenaNeural",
+      "name": "Ximena (ES Female)",
+      "description": "English Neural voice",
+      "locale": "es-ES",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-CR-JuanNeural": {
+      "id": "es-CR-JuanNeural",
+      "name": "Juan (CR Male)",
+      "description": "English Neural voice",
+      "locale": "es-CR",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-CR-MariaNeural": {
+      "id": "es-CR-MariaNeural",
+      "name": "Maria (CR Female)",
+      "description": "English Neural voice",
+      "locale": "es-CR",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-CU-BelkysNeural": {
+      "id": "es-CU-BelkysNeural",
+      "name": "Belkys (CU Female)",
+      "description": "English Neural voice",
+      "locale": "es-CU",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-CU-ManuelNeural": {
+      "id": "es-CU-ManuelNeural",
+      "name": "Manuel (CU Male)",
+      "description": "English Neural voice",
+      "locale": "es-CU",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-DO-EmilioNeural": {
+      "id": "es-DO-EmilioNeural",
+      "name": "Emilio (DO Male)",
+      "description": "English Neural voice",
+      "locale": "es-DO",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-DO-RamonaNeural": {
+      "id": "es-DO-RamonaNeural",
+      "name": "Ramona (DO Female)",
+      "description": "English Neural voice",
+      "locale": "es-DO",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-EC-AndreaNeural": {
+      "id": "es-EC-AndreaNeural",
+      "name": "Andrea (EC Female)",
+      "description": "English Neural voice",
+      "locale": "es-EC",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-EC-LuisNeural": {
+      "id": "es-EC-LuisNeural",
+      "name": "Luis (EC Male)",
+      "description": "English Neural voice",
+      "locale": "es-EC",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-SV-LorenaNeural": {
+      "id": "es-SV-LorenaNeural",
+      "name": "Lorena (SV Female)",
+      "description": "English Neural voice",
+      "locale": "es-SV",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-SV-RodrigoNeural": {
+      "id": "es-SV-RodrigoNeural",
+      "name": "Rodrigo (SV Male)",
+      "description": "English Neural voice",
+      "locale": "es-SV",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-GQ-JavierNeural": {
+      "id": "es-GQ-JavierNeural",
+      "name": "Javier (GQ Male)",
+      "description": "English Neural voice",
+      "locale": "es-GQ",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-GQ-TeresaNeural": {
+      "id": "es-GQ-TeresaNeural",
+      "name": "Teresa (GQ Female)",
+      "description": "English Neural voice",
+      "locale": "es-GQ",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-GT-AndresNeural": {
+      "id": "es-GT-AndresNeural",
+      "name": "Andres (GT Male)",
+      "description": "English Neural voice",
+      "locale": "es-GT",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-GT-MartaNeural": {
+      "id": "es-GT-MartaNeural",
+      "name": "Marta (GT Female)",
+      "description": "English Neural voice",
+      "locale": "es-GT",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-HN-CarlosNeural": {
+      "id": "es-HN-CarlosNeural",
+      "name": "Carlos (HN Male)",
+      "description": "English Neural voice",
+      "locale": "es-HN",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-HN-KarlaNeural": {
+      "id": "es-HN-KarlaNeural",
+      "name": "Karla (HN Female)",
+      "description": "English Neural voice",
+      "locale": "es-HN",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-MX-DaliaNeural": {
+      "id": "es-MX-DaliaNeural",
+      "name": "Dalia (MX Female)",
+      "description": "English Neural voice",
+      "locale": "es-MX",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-MX-JorgeNeural": {
+      "id": "es-MX-JorgeNeural",
+      "name": "Jorge (MX Male)",
+      "description": "English Neural voice",
+      "locale": "es-MX",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-NI-FedericoNeural": {
+      "id": "es-NI-FedericoNeural",
+      "name": "Federico (NI Male)",
+      "description": "English Neural voice",
+      "locale": "es-NI",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-NI-YolandaNeural": {
+      "id": "es-NI-YolandaNeural",
+      "name": "Yolanda (NI Female)",
+      "description": "English Neural voice",
+      "locale": "es-NI",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-PA-MargaritaNeural": {
+      "id": "es-PA-MargaritaNeural",
+      "name": "Margarita (PA Female)",
+      "description": "English Neural voice",
+      "locale": "es-PA",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-PA-RobertoNeural": {
+      "id": "es-PA-RobertoNeural",
+      "name": "Roberto (PA Male)",
+      "description": "English Neural voice",
+      "locale": "es-PA",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-PY-MarioNeural": {
+      "id": "es-PY-MarioNeural",
+      "name": "Mario (PY Male)",
+      "description": "English Neural voice",
+      "locale": "es-PY",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-PY-TaniaNeural": {
+      "id": "es-PY-TaniaNeural",
+      "name": "Tania (PY Female)",
+      "description": "English Neural voice",
+      "locale": "es-PY",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-PE-AlexNeural": {
+      "id": "es-PE-AlexNeural",
+      "name": "Alex (PE Male)",
+      "description": "English Neural voice",
+      "locale": "es-PE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-PE-CamilaNeural": {
+      "id": "es-PE-CamilaNeural",
+      "name": "Camila (PE Female)",
+      "description": "English Neural voice",
+      "locale": "es-PE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-PR-KarinaNeural": {
+      "id": "es-PR-KarinaNeural",
+      "name": "Karina (PR Female)",
+      "description": "English Neural voice",
+      "locale": "es-PR",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-PR-VictorNeural": {
+      "id": "es-PR-VictorNeural",
+      "name": "Victor (PR Male)",
+      "description": "English Neural voice",
+      "locale": "es-PR",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-ES-AlvaroNeural": {
+      "id": "es-ES-AlvaroNeural",
+      "name": "Alvaro (ES Male)",
+      "description": "English Neural voice",
+      "locale": "es-ES",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-ES-ElviraNeural": {
+      "id": "es-ES-ElviraNeural",
+      "name": "Elvira (ES Female)",
+      "description": "English Neural voice",
+      "locale": "es-ES",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-US-AlonsoNeural": {
+      "id": "es-US-AlonsoNeural",
+      "name": "Alonso (US Male)",
+      "description": "English Neural voice",
+      "locale": "es-US",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-US-PalomaNeural": {
+      "id": "es-US-PalomaNeural",
+      "name": "Paloma (US Female)",
+      "description": "English Neural voice",
+      "locale": "es-US",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-UY-MateoNeural": {
+      "id": "es-UY-MateoNeural",
+      "name": "Mateo (UY Male)",
+      "description": "English Neural voice",
+      "locale": "es-UY",
+      "gender": "Male",
+      "status": "active"
+    },
+    "es-UY-ValentinaNeural": {
+      "id": "es-UY-ValentinaNeural",
+      "name": "Valentina (UY Female)",
+      "description": "English Neural voice",
+      "locale": "es-UY",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-VE-PaolaNeural": {
+      "id": "es-VE-PaolaNeural",
+      "name": "Paola (VE Female)",
+      "description": "English Neural voice",
+      "locale": "es-VE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "es-VE-SebastianNeural": {
+      "id": "es-VE-SebastianNeural",
+      "name": "Sebastian (VE Male)",
+      "description": "English Neural voice",
+      "locale": "es-VE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "sv-SE-MattiasNeural": {
+      "id": "sv-SE-MattiasNeural",
+      "name": "Mattias (SE Male)",
+      "description": "English Neural voice",
+      "locale": "sv-SE",
+      "gender": "Male",
+      "status": "active"
+    },
+    "sv-SE-SofieNeural": {
+      "id": "sv-SE-SofieNeural",
+      "name": "Sofie (SE Female)",
+      "description": "English Neural voice",
+      "locale": "sv-SE",
+      "gender": "Female",
+      "status": "active"
+    },
+    "tr-TR-EmelNeural": {
+      "id": "tr-TR-EmelNeural",
+      "name": "Emel (TR Female)",
+      "description": "English Neural voice",
+      "locale": "tr-TR",
+      "gender": "Female",
+      "status": "active"
+    },
+    "tr-TR-AhmetNeural": {
+      "id": "tr-TR-AhmetNeural",
+      "name": "Ahmet (TR Male)",
+      "description": "English Neural voice",
+      "locale": "tr-TR",
+      "gender": "Male",
+      "status": "active"
+    },
+    "uk-UA-OstapNeural": {
+      "id": "uk-UA-OstapNeural",
+      "name": "Ostap (UA Male)",
+      "description": "English Neural voice",
+      "locale": "uk-UA",
+      "gender": "Male",
+      "status": "active"
+    },
+    "uk-UA-PolinaNeural": {
+      "id": "uk-UA-PolinaNeural",
+      "name": "Polina (UA Female)",
+      "description": "English Neural voice",
+      "locale": "uk-UA",
+      "gender": "Female",
+      "status": "active"
+    },
+    "cy-GB-AledNeural": {
+      "id": "cy-GB-AledNeural",
+      "name": "Aled (UK Male)",
+      "description": "English Neural voice",
+      "locale": "cy-GB",
+      "gender": "Male",
+      "status": "active"
+    },
+    "cy-GB-NiaNeural": {
+      "id": "cy-GB-NiaNeural",
+      "name": "Nia (UK Female)",
+      "description": "English Neural voice",
+      "locale": "cy-GB",
+      "gender": "Female",
+      "status": "active"
+    }
+  }
+}

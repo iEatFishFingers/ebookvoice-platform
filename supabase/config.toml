@@ -1,0 +1,40 @@
+# Local Supabase stack for `npx supabase start`.
+# Unlisted settings use the CLI defaults. Migrations in ./migrations are applied
+# in filename order on `supabase start` / `supabase db reset`.
+
+project_id = "ebookvoice-platform"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+
+[local_smtp]
+# Captures auth emails (password reset, etc.); web UI at http://127.0.0.1:54324
+enabled = true
+port = 54324
+
+[storage]
+enabled = false
+
+[auth]
+enabled = true
+site_url = "http://localhost:8081"
+additional_redirect_urls = ["http://localhost:8081/**", "ebookvoice://auth/callback"]
+jwt_expiry = 3600
+enable_signup = true
+
+[auth.email]
+enabled = true
+# Local only: sign-ups are usable immediately without clicking a confirmation link.
+enable_confirmations = false
